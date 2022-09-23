@@ -3,6 +3,10 @@ const array = [
     label: "Week1 notes",
     url: "week1/index.html",
   },
+  {
+    label: "Week2 team work",
+    url: "week2/team.html",
+  },
 ];
 
 array.forEach(function (item) {

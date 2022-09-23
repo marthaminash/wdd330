@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2</title>
+  </head>
+  <body>
+    <h1>Week 2 - Team Work</h1>
+    <div class="task-1">
+      <h2>Task 1</h2>
+      <input type="text" id="input-task-1"></input>
+      <button type="submit" id="button-task-1" onclick="displayValueTask1()">Submit</button>
+      <div id="output-task-1"></div>
+    </div>
+    <div class="task-2">
+         <h2>Task 2</h2>
+        <input type="text" id="input-task-2"></input>
+        <button type="submit" onclick="displayValueTask2()" id="button-task-2">Sum</button>
+    <div id="output-task-2"></div>
+    </div>
+    <div class="task-3">
+        <h2>Task 3</h2>
+        <input type="number" id="input-task-3"/></input>
+        <button type="submit" id="button-task-3" onclick="add()">+</button>
+        <div id="output-task-3"></div>
+    </div>
+
+    <script>
+        function displayValueTask1(){
+            const inputTask1 = document.getElementById('input-task-1');
+            const outputTask1 = document.getElementById('output-task-1');
+
+            outputTask1.innerHTML = inputTask1.value;
+        }
+
+        function displayValueTask2(){
+            const inputTask2 = document.getElementById('input-task-2').value;
+            const outputTask2 = document.getElementById('output-task-2')
+
+            const inputNumber = parseInt(inputTask2);
+            outputTask2.innerHTML = sumTask2(inputNumber);
+
+        }
+
+        function sumTask2(num){
+            let total = 0;
+
+            for (let i = 0; i <= num; i++ ){
+                total += i;
+            }
+
+            return total;
+        }
+
+        function add(){
+            const num1 = document.getElementById('output-task-1').value;
+            const num2 = document.getElementById('output-task-2').value;
+            const outputTask3 = document.getElementById('output-task-3');
+
+            const num1Float = parseFloat(num1);
+            const num2Float = parseFloat(num2);
+            if ((num1Float !== NaN) & (num2Float !== NaN)) {
+                const total = num1Float + num2Float;
+
+            outputTask3.innerHTML = total;
+            }
+        }
+
+    </script>
+  </body>
+</html>
