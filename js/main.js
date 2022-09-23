@@ -4,8 +4,8 @@ const array = [
     url: "week1/index.html",
   },
   {
-    label: "Week2 team work",
-    url: "week2/team.html",
+    label: "Week2 notes",
+    url: "week2/index.html",
   },
 ];
 

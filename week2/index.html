@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2</title>
+  </head>
+  <body>
+    <h1>Week 2</h1>
+    <h2>Team assignment</h2>
+    <a href="../week2/team.html">Link</a>
+    <h2>Notes</h2>
+    <div>
+      <h3>Variables</h3>
+      let and const vs. var <br />
+      The main difference was that variables declared using let and const have
+      block scope, which is discussed in more detail below. They also prevent
+      from overwriting any built-in methods by assignment.
+      <br />
+      var variables have function scope.
+    </div>
+    <div>
+      <h3>Arrays</h3>
+      Arrays are an ordered list of values. Arrays can be multidimensional -
+      they contain other arrays.
+      <br />We can use an if and else statement to control the flow of code
+      <br />The switch statement can be used instead of multiple if and else
+      statements <br />A while loop and do ... while loop can be used to repeat
+      a block of code while a condition is still true <br />A for loop works in
+      a similar way to a while loop, but has a different syntax <br />A for-of
+      loop can be used to iterate over an array <br />Sets and maps are
+      enumerable, so can also be looped over using a for-of loop
+    </div>
+    <div>
+      <h4>Functions</h4>
+      Functions are first-class objects that behave the same way as other
+      values.
+      <br />Function declaration, function expression and assigning an anonymous
+      function to a variable.<br />An argument is a value that is provided to a
+      function when it is invoked. <br />The rest operator can be used to access
+      multiple arguments as an array. <br />Default arguments can be supplied to
+      a function by assigning them to the parameters. <br />Function
+      declarations can be invoked before they are defined because they are
+      hoisted to the top of the scope, but function expressions cannot be
+      invoked until after they are defined. <br />A callback is a function that
+      is provided as an argument to another function.
+    </div>
+
+    <script>
+      //Excercise: Iterate Odd Numbers With a For Loop
+
+      // Setup
+      const myArray = [];
+
+      // Only change code below this line
+
+      for (let i = 1; i < 10; i += 2) {
+        myArray.push(i);
+      }
+    </script>
+  </body>
+</html>
