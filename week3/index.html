@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 - Objects, DOM and Events</title>
+  </head>
+  <body>
+    <h1>Week 3 - Objects, DOM and Events</h1>
+    <h2>Methods</h2>
+    <div>
+      Functions that are stored in object properties are called “methods”.
+      <br />
+      When we write our code using objects to represent entities, that is called
+      object-oriented programming, in short: “OOP”.
+      <br />
+      It is common that an object method needs to access the information stored
+      in the object to do its job. For instance, the code inside user.sayHi()
+      may need the name of the user.
+      <br />
+      To access the object, a method can use the this keyword.
+      <br />
+      Arrow functions are special: they do not have their “own” this. When this
+      is accessed inside an arrow function, it is taken from outside.
+    </div>
+
+    <h2>Object-Oriented Programming</h2>
+    <div>
+      Object-oriented programming (OOP for short) is a style of programming that
+      involves separating the code into objects that have properties and
+      methods.
+      <h3>Encapsulation</h3>
+      <div>
+        Encapsulation involves keeping all the programming logic inside an
+        object and making methods available to implement the functionality,
+        without the outside world needing to know how it is done.
+      </div>
+      <h3>Polymorphism</h3>
+      <div>
+        Various objects can share the same method, but also have the ability to
+        override shared methods with a more specific implementation.
+      </div>
+      <h3>Inheritance</h3>
+      <div>
+        In OOP, inheritance means we can take an object that already exists and
+        inherit all its properties and methods. We can then improve on its
+        functionality by adding new properties and methods.
+      </div>
+    </div>
+
+    <script>
+      //Task 1 - Using "this" in object literal
+
+      //   function makeUser() {
+      //     return {
+      //       name: "John",
+      //       ref: this,
+      //     };
+      //   }
+
+      //   let user = makeUser();
+
+      //   alert(user.ref.name); // What's the result?
+
+      //Task 2 - Create a calculator
+
+      //   let calculator = {
+      //     sum() {
+      //       return this.a + this.b;
+      //     },
+
+      //     mul() {
+      //       return this.a * this.b;
+      //     },
+
+      //     read() {
+      //       this.a = +prompt("a?", 0);
+      //       this.b = +prompt("b?", 0);
+      //     },
+      //   };
+
+      //   calculator.read();
+      //   alert(calculator.sum());
+      //   alert(calculator.mul());
+    </script>
+  </body>
+</html>
