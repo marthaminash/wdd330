@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 4</title>
+  </head>
+  <body>
+    <h1>Week 5 - Notes</h1>
+    <h2>Testing and Debugging</h2>
+    <h3>Types of Errors</h3>
+    <ul>
+      <li>
+        System error ― there’s a problem with the system or external devices
+        with which the program is interacting.
+      </li>
+      <li>
+        Programmer error ― the program contains incorrect syntax or faulty
+        logic; it could even be as simple as a typo.
+      </li>
+      <li>
+        User error ― the user has entered data incorrectly, which the program is
+        unable to handle.
+      </li>
+    </ul>
+    <h4>Exceptions</h4>
+    <p>
+      An exception is an error that produces a return value that can then be
+      used by the program to deal with the error.
+    </p>
+    <h4>Stack Traces</h4>
+    <p>
+      An exception will also produce a stack trace. This is a sequence of
+      functions or method calls that lead to the point where the error occurred.
+      It’s often not just a single function or method call that causes an error.
+    </p>
+    <h4>Warnings</h4>
+    <p>
+      A warning can occur if there’s an error in the code that isn't enough to
+      cause the program to crash. This means the program will continue to run
+      after a warning.
+    </p>
+    <h4>Strict Mode</h4>
+    <p>
+      ECMAScript 5 introduced a strict mode that produces more exceptions and
+      warnings and prohibits the use of some deprecated features. This is due to
+      the fact that strict mode considers coding practices that were previously
+      accepted as just being 'poor style' as actual errors.
+    </p>
+    <h4>Exception Handling</h4>
+    <p>
+      When an exception occurs, the program terminates with an error message.
+      This is ideal in development as it allows us to identify and fix errors.
+    </p>
+    <ul>
+      <li>
+        Try - If we suspect a piece of code will result in an exception, we can
+        wrap it in a try block.
+      </li>
+      <li>
+        Catch - This will run the code inside the block as normal, but if an
+        exception occurs it will pass the error object that is thrown onto a
+        catch block.
+      </li>
+      <li>Finally - A finally block can be added after a catch block.</li>
+    </ul>
+  </body>
+</html>
