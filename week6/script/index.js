@@ -35,7 +35,6 @@ function addTask(event) {
 
   todoList.appendChild(taskSection);
 
-  //Clear the input
   todoInput.value = "";
 }
 
