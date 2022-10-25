@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 7 - Notes</title>
+  </head>
+  <body>
+    <h1>Further Functions</h1>
+    <h2>Function Properties and Methods</h2>
+    <p>
+      Because functions are first-class objects means, they can have properties
+      and methods themselves. For example, length property.
+    </p>
+    <h2>Call and Apply Methods</h2>
+    <p>
+      The call() method can be used to set the value of this inside a function
+      to an object that is provided as the first argument.
+      <h3>This</h3>
+      If the function that’s called requires any parameters, these need to be provided as arguments after the first argument, which is always the value of this.<br/>
+      If a function doesn’t refer to an object as this in its body, it can still be called using the call() method, but you need provide null as its first argument.
+    </p>
+    <h2>Custom Properties</h2>
+    <p>We can add our own properties to functions in the same way that we can add properties to any object in JavaScript. For example, we can add a description property to a function that describes what it does:</p>
+    <h2>Memoization</h2>
+    <p>If a function takes some time to compute a return value, we can save the result in a cache property.
+        Then if the same argument is used again later, we can return the value from the cache, rather than having to compute the result again. For example, say squaring a number was an expensive computational operation that took a long time.
+    </p>
+    <h2>Immediately Invoked Function Expressions</h2>
+    <p>An Immediately Invoked Function Expression is an anonymous function that, as the name suggests, is invoked as soon as it is defined. </p>
+    <h2>Functions that Define and Rewrite Themselves</h2>
+    <p>The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, and even redefine itself. This is done by assigning an anonymous function to a variable that has the same name as the function.</p>
+    <h2>Recursive Functions</h2>
+    <p>A recursive function is one that invokes itself until a certain condition is met. It is a useful tool to use when iterative processes are involved. </p>
+    <h2>Callbacks</h2>
+    <p>Callbacks can be used to facilitate event-driven asynchronous programming. JavaScript is a single-threaded environment, which means only one piece of code will ever be processed at a time. This may seem like a limitation, but non-blocking techniques can be used to ensure that the program continues to run. Instead of waiting for an event to occur, a callback can be created that is invoked when the event happens. This means that the code is able to run out of order, or asynchronously.</p>
+    <h2>Callback Hell</h2>
+    <p>The increase in the use of asynchronous programming in JavaScript has meant that more and more callbacks are being used. This can result in messy and confusing 'spaghetti code'. This is when more than one callback is used in the same function, resulting in a large number of nested blocks that are difficult to comprehend.</p>
+    <h2>Async Functions</h2>
+    <p>Async functions were added to the ES2017 specification. These functions are preceded by the async keyword and allow you to write asynchronous code as if it was synchronous. This is achieved by using the await operator before an asynchronous function. This will wrap the return value of the function in a promise that can then be assigned to a variable. </p>
+    <h2>Closures</h2>
+    <p>Closures are one of JavaScript’s most powerful features, but they can be difficult to get your head around initially.</p>
+    <h2>Ajax</h2>
+    <p>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading. This enables data to be sent and received in the background, as well as portions of a page to be updated in response to user events, while the rest of the program continues to run.</p>
+    <p>Ajax can be used for making partial page updates without having to do a full page reload. It can be used for communicating with external APIs. Ajax requests can be made using the Fetch API. The Response interface allows you to control the response received from a request or to create your own response objects. The Request interface allows you to create a request object that contains information about the request being made, such as the URL and headers.</p>
+</body>
+</html>
