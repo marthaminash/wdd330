@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 8 - Notes</title>
+  </head>
+  <body>
+    <h1>Week 8 - Notes</h1>
+    <h2>CSS3 Transforms and Transitions</h2>
+    <p>
+      The CSS3 transform property lets us translate, rotate, scale, and/or skew
+      any element on the page. We can manipulate an elements appearance using
+      transform functions. The value of the transform property is one or more
+      transform functions (separated by spaces) that will be applied in the
+      order they’re provided.
+    </p>
+    <h3>Translation</h3>
+    <p>
+      Translation functions allow you to move elements left, right, up, or down.
+      These functions are similar to the behavior of position: relative; when
+      declaring top and left, moving elements up and down or left and right
+      along the x and y axes. When you employ a translation function, you are
+      moving elements without impacting the flow of the document. Unlike
+      position: relative, which allows you to position an element either against
+      its current position or against a parent or other ancestor, a translated
+      element can only be moved relative to its current position. The
+      translate(x,y) function moves an element x from the left, and y from the
+      top.
+    </p>
+    <h3>Scaling</h3>
+    <p>
+      The scale(x,y) function scales an element by the defined factors
+      horizontally then vertically. If only one value is provided, it will be
+      used for both the x and y values, growing or shrinking your element or
+      pseudo-element while maintaining the original aspect ratio. As with
+      translate, you can also use the scaleX(x) or scaleY(y) functions. These
+      functions will scale only the horizontal dimensions or only the vertical
+      dimensions respectively.
+    </p>
+    <h3>Rotation</h3>
+    <p>
+      The rotate() function rotates an element around the point of origin by a
+      specified angle value. As with scale, by default the point of origin is
+      the elements center. Generally, angles are declared in degrees, with
+      positive degrees moving clockwise and negative moving counterclockwise. In
+      addition to degrees, values can be provided in grads, radians, or turns,
+      but we will just be sticking with degrees.
+    </p>
+    <h3>Skew</h3>
+    <p>The skew(x,y) function specifies a skew along the x and y axes.</p>
+    <h2>Transitions</h2>
+    <p>
+      Transitions allow the values of CSS properties to change over time,
+      essentially providing simple animations. For example, if a link changes
+      color on hover, you can have it gradually fade from one color to the other
+      instead of a sudden change. They are both transitions, but with the CSS
+      transition property the color transition can be gradual. If the browser
+      lacks support for transitions, the change will be immediate instead of
+      gradual, which is fine and accessible.
+    </p>
+    <h2>Animations</h2>
+    <p>
+      Transitions animate elements over time; however, they are limited in what
+      they can do. You can define starting and ending states, but there is no
+      fine-grained control over any intermediate states. CSS animations, unlike
+      transitions, allow you to control each step of an animation via keyframes.
+    </p>
+    <h3>Animation Properties</h3>
+    <ul>
+      <li>animation-name</li>
+      <li>animation-duration</li>
+      <li>animation-timing-function</li>
+      <li>animation-iteration-count</li>
+      <li>animation-delay</li>
+      <li>animation-fill-mode</li>
+      <li>animation-play-state</li>
+    </ul>
+  </body>
+</html>

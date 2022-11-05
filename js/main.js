@@ -27,6 +27,10 @@ const array = [
     label: "Week7 notes",
     url: "week7/index.html",
   },
+  {
+    label: "Week8 notes",
+    url: "week8/index.html",
+  },
 ];
 
 array.forEach(function (item) {
