@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4a011261d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="wrapper-1">
+        <div class="current-location">
+          <a href="#" class="current-location-btn"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+        </div>
+        <form class="input-group">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Enter a city"
+            id="search-form"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </div>
+      <div class="wrapper-2">
+        <div class="block-1">
+          <h1 id="city">Lviv, UA</h1>
+          <h2 id="day-hour">Thursday 15:44</h2>
+          <div class="current-weather">
+            <div class="weather-emoji">
+              <img
+                src="img/sun.png"
+                alt="Weather emoji"
+                id="weather-emoji-picture"
+              />
+            </div>
+            <div class="current-temperature">
+              <span id="current-temperature-value">19</span
+              ><span id="current-unit-sign">°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="block-2">
+          <div class="block-2-section-1">
+            <span id="highest-temp">32</span>°C<br /><strong>High</strong>
+          </div>
+          <div class="block-2-section-2">
+            <span id="lowest-temp">26</span>°C<br /><strong>Low</strong>
+          </div>
+          <div class="block-2-section-3">
+            <span id="wind">5</span> km/h<br /><strong>Wind</strong>
+          </div>
+          <div class="block-2-section-4">
+            <span id="feels-like">30</span>°C<br /><strong>Feels like</strong>
+          </div>
+          <div class="block-2-section-5">
+            <span id="humidity">49</span>%<br /><strong>Humidity</strong>
+          </div>
+          <div class="block-2-section-6">
+            <span id="pressure">10.19</span> inHg<br /><strong>Pressure</strong>
+          </div>
+        </div>
+      </div>
+      <h2 class="this-week-header">This week</h2>
+      <div class="this-week-section"></div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
